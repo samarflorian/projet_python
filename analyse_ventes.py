@@ -4,7 +4,7 @@ import seaborn as sns
 
 # Chargement du fichier CSV
 try:
-    df = pd.read_csv("sales_data_.csv")
+    df = pd.read_csv("sales_data.csv")
 except FileNotFoundError:
     print("Le fichier n'a pas été trouvé. Vérifie le chemin du fichier.")
     exit()
@@ -84,7 +84,6 @@ plt.ylabel("Ventes")
 plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
-plt.show()
 plt.savefig("graphique_à_barres_ventes_par_région.png")
 plt.close()
 
@@ -95,14 +94,12 @@ plt.figure(figsize=(8, 6))
 plt.pie(df_vente_par_categorie["Chiffre_affaire"], labels=df_vente_par_categorie["Category"], colors=palette, autopct='%1.1f%%')
 plt.title("Ventes par Catégorie")
 plt.tight_layout()
-plt.show()
 plt.savefig("diagramme_circulaire_ventes_par_catégorie.png")
 plt.close()
 
 # Boxplot des ventes par région
 sns.boxplot(data=df, x="Region", y="Chiffre_affaire")
 plt.title("Boxplot des ventes par région")
-plt.show()
 plt.savefig("boxplot_ventes_par_région.png")
 plt.close()
 
@@ -127,6 +124,5 @@ plt.ylabel('Ventes totales')
 plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
-plt.show()
 plt.savefig("graphique_ventes_mensuelles.png")
 plt.close()
