@@ -16,7 +16,7 @@ Ce projet a pour but de démontrer mes compétences en analyse de données à tr
 
 ## 📁 Fichier utilisé
 
-**sales_data_with_specific_errors.csv**  
+**sales_data.csv**  
 > Un jeu de données fictif contenant des erreurs réalistes (valeurs manquantes, formats invalides, doublons, etc.), représentant des transactions commerciales :
 
 - `TransactionID`  
