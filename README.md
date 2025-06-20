@@ -58,12 +58,10 @@ Ce projet a pour but de démontrer mes compétences en analyse de données à tr
 
 ## 📈 Exemples de résultats
 
-- Le produit `PXXX` est le plus vendu avec XXXX unités écoulées.
-- La région `Nord` génère le plus de chiffre d'affaires.
-- Les ventes sont les plus fortes entre `juin` et `août`.
-- La catégorie `Électronique` représente XX % du CA total.
-
-*(Ces chiffres seront visibles dans les sorties du code ou dans le notebook)*
+- Le produit `P148` est le plus vendu avec 129 unités écoulées.
+- La région `Centre` génère le plus de chiffre d'affaires.
+- Les ventes sont les plus fortes en `août`.
+- La catégorie `Électronique` représente 18,2 % du CA total.
 
 ---
 
@@ -72,8 +70,7 @@ Ce projet a pour but de démontrer mes compétences en analyse de données à tr
 | Nom du fichier | Description |
 |----------------|-------------|
 | `analyse_ventes.py` | Script Python complet avec traitement et visualisations |
-| `sales_data_with_specific_errors.csv` | Jeu de données original |
-| `sales_data_cleaned.csv` *(optionnel)* | Jeu de données nettoyé |
+| `sales_data.csv` | Jeu de données original |
 | `images/` *(optionnel)* | Dossier contenant les graphiques sauvegardés |
 | `README.md` | Description du projet |
 
@@ -87,15 +84,6 @@ Ce projet a pour but de démontrer mes compétences en analyse de données à tr
 
 ---
 
-## ✅ Résultat attendu
-
-Un recruteur ou manager peut :
-- Lire ce script/notebook
-- Comprendre les étapes de nettoyage
-- Visualiser les KPIs extraits
-- Évaluer mes capacités à structurer une analyse de bout en bout
-
----
 
 ## 🧵 Auteur
 
