@@ -71,7 +71,7 @@ Ce projet a pour but de démontrer mes compétences en analyse de données à tr
 |----------------|-------------|
 | `analyse_ventes.py` | Script Python complet avec traitement et visualisations |
 | `sales_data.csv` | Jeu de données original |
-| `/images` | les quatre graphiques sauvegardés |
+| `images/` | les quatre graphiques sauvegardés |
 | `README.md` | Description du projet |
 
 ---
