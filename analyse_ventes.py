@@ -35,6 +35,11 @@ print(df.info())
 # Convertir les dates en gérant les erreurs
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
 
+# Convertir les prix et les quantités en valeurs numériques en gérant les erreurs
+df["Price"] = pd.to_numeric(df["Price"], errors='coerce')
+df["Quantity"] = pd.to_numeric(df["Quantity"], errors='coerce').astype("Int64")
+
+
 # Vérifier les dates invalides (NaT)
 invalid_dates = df[df['Date'].isna()]
 print("\nDates invalides :")
@@ -100,6 +105,7 @@ plt.close()
 # Boxplot des ventes par région
 sns.boxplot(data=df, x="Region", y="Chiffre_affaire")
 plt.title("Boxplot des ventes par région")
+plt.tight_layout()
 plt.savefig("boxplot_ventes_par_région.png")
 plt.close()
 
